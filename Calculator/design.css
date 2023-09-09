@@ -1,0 +1,67 @@
+body
+{
+	background-image: linear-gradient(to bottom right, orange,violet, pink,yellow,green);
+}
+#calculator
+{
+	width:250px;
+	height:350px;
+	border:1px solid black;
+	border-radius:20px;
+	text-align:center;
+	background:lightgreen;
+	margin:150px auto;
+	box-shadow:2px 2px 30px white;
+}
+
+#display
+{
+	margin-top:30px;
+	margin-bottom:20px;
+	width:220px;
+	height:30px;
+	border:1px solid red;
+	border-radius:10px;
+	box-shadow:0px 0px 30px yellow;
+	text-align:right;
+	font:20px bold;
+	color:blue;
+}
+
+.keys
+{
+	width:41px;
+	height:35px;
+	margin-left:10px;
+	margin-bottom:20px;
+	border:1px solid blue;
+	border-radius:50%;
+	box-shadow:0px 0px 20px skyblue;
+	cursor:pointer;
+}
+
+
+.keys:hover
+{
+	background:blue;
+	font-weight:bold;
+}
+
+#equal
+{
+	width: 90px;
+	height:35px;
+	margin-left:10px;
+	margin-bottom:20px;
+	box-shadow:0px 0px 20px skyblue;
+	cursor:pointer;
+}
+
+#equal:hover
+{
+	background:yellow;
+	font-weight:bold;
+}
+
+
+

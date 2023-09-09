@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="design.css">
+	</head>
+<title>calculator</title>
+<body>
+	<div id="calculator">
+		<form>
+			<label for="display"></label>
+			<input type="text" id="display" aria-label="Calculator Display"><br>
+			
+			<input type="button" value="c" class="keys" onclick="addtoscreen('c')">
+			<input type="button" value="<--" class="keys" onclick="backspace()">
+			<input type="button" value="X^3" class="keys" onclick="power(3)">
+			<input type="button" value="+" class="keys" onclick="addtoscreen('+')"><br>
+			
+			<input type="button" value="9" class="keys" onclick="addtoscreen('9')">
+			<input type="button" value="8" class="keys" onclick="addtoscreen('8')">
+			<input type="button" value="7" class="keys" onclick="addtoscreen('7')">
+			<input type="button" value="-" class="keys" onclick="addtoscreen('-')"><br>
+			
+			<input type="button" value="6" class="keys" onclick="addtoscreen('6')">
+			<input type="button" value="5" class="keys" onclick="addtoscreen('5')">
+			<input type="button" value="4" class="keys" onclick="addtoscreen('4')">
+			<input type="button" value="*" class="keys" onclick="addtoscreen('*')"><br>
+			
+			<input type="button" value="3" class="keys" onclick="addtoscreen('3')">
+			<input type="button" value="2" class="keys" onclick="addtoscreen('2')">
+			<input type="button" value="1" class="keys" onclick="addtoscreen('1')">
+			<input type="button" value="/" class="keys" onclick="addtoscreen('/')"><br>
+			
+			<input type="button" value="0" class="keys" onclick="addtoscreen('0')">
+			<input type="button" value="." class="keys" onclick="addtoscreen('.')">
+			<input type="button" value="=" class="keys" onclick="answer()">
+			
+
+	
+		</form>
+	
+	<script src="logic.js"></script>
+	</body>
+</html>
+
