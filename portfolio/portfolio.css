@@ -1,0 +1,302 @@
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('web.jpeg');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+    text-align: center;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+#about img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left:150px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+.portfolioContent:hover{
+    border:1px solid #008000;
+    box-shadow: 0 10px 10px 0;
+    transform: translateY(-5px);
+}
+#resume a:hover{
+    border:1px solid grey;
+    box-shadow: 0 10px 10px 0;
+    transform: translateY(-5px);
+}
+/* Navigation Styles */
+.navbar {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: green;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: skyblue; /* Your primary color */
+}
+
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+#resume h3{
+    margin-left:350px;
+}
+#resume{
+    background:transparent;
+}
+/* Footer Styles */
+
+footer {
+    background-color: #0c0c0c;
+    color: black;
+    padding: 10px 0; /* Adjust the top and bottom padding as needed */
+    text-align: center;
+    height:30px;
+}
+#footer{
+    background-color:black;
+}
+
+/* Social Media Icons Styles (in the footer) */
+footer ul.list-inline {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+footer ul.list-inline li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul.list-inline li a {
+    color: blue; /* Your primary color */
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+/* spacing on all sections */
+#about, #portfolio,#resume {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+#home h4{
+    margin-left:10%;
+}
+
+
+#home h2{
+    
+    animation:mySlide;
+    animation-duration:2s;
+    animation-play-state:running;
+    animation-delay:1s;
+    animation-timing-function:ease-out;
+    animation-iteration-count:initial;
+}
+#home h3{
+    
+    animation:mySli;
+    animation-duration:2s;
+    animation-play-state:running;
+    animation-delay:1s;
+    animation-timing-function:ease-out;
+    animation-iteration-count:1;
+}
+#home h4{
+    
+    animation:mySl;
+    animation-duration:2s;
+    animation-play-state:running;
+    animation-delay:1s;
+    animation-timing-function:ease-out;
+    animation-iteration-count:1;
+}
+#about table{
+    animation:mySlid;
+    animation-duration:2s;
+    animation-play-state:running;
+    animation-delay:1s;
+    animation-timing-function:ease-out;
+    animation-iteration-count:initial;
+}
+
+#about img{
+    animation:mySlides;
+    animation-duration:0s;
+    animation-play-state:running;
+    animation-delay:0s;
+    animation-timing-function:ease-out;
+    animation-iteration-count:initial;
+    
+}
+#contact form{
+    animation:mySlidee;
+    animation-duration:1s;
+    animation-play-state:running;
+    animation-delay:0s;
+    animation-timing-function:ease-in;
+    animation-iteration-count:initial;
+}
+
+@keyframes mySlide {
+    from{margin-left:-100%;}
+    to{margin-left:0%;}
+}
+@keyframes mySli {
+    from{margin-right:-70%;display:block;}
+    to{margin-left:0%;display:block;}
+}
+@keyframes mySl {
+    from{margin-right:-70%;display:block;}
+    to{margin-left:10%;display:block;}
+}
+@keyframes mySlides {
+    from{margin-left:0%;}
+    to{margin-left:27%;}
+}
+@keyframes mySlid {
+    from{margin-left:40%;}
+    to{margin-left:0%;}
+}
+@keyframes mySlidee {
+    from{margin-top:100%;}
+    to{margin-top:0%;}
+}
+
+
+
+.icon {
+    background: url('images/hive.png') 0 0 no-repeat;
+    width: 76px;
+    height: 76px;
+    top: -200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.icon:hover {
+    animation: rotatecircle 4s infinite linear;
+}
+
+.outerCircle {
+    background-color: transparent;
+    border: 8px solid rgba(189, 215, 60, 0.6);
+    opacity: .9;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-radius: 100px;
+    top: 315px;
+    right: -527px;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    animation: spinPulse 3s infinite ease-in-out;
+}
+
+.innerCircle {
+    background-color: transparent;
+    border: 5px solid white;
+    opacity: .9;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-radius: 100px;
+    top: 173px;
+    right: -528px;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    position: relative;
+    animation: spinoffPulse 1s infinite linear;
+}
+
+@keyframes spinPulse {
+    0% { transform: rotate(160deg); opacity: 0; box-shadow: 0 0 1px #bdd73c; }
+    50% { transform: rotate(145deg); opacity: 1; }
+    100% { transform: rotate(-320deg); opacity: 0; }
+}
+
+@keyframes spinoffPulse {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes rotatecircle {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+
+
+.map-container {
+    max-width: 100%;
+    overflow: hidden;
+    color: red;
+    width: 500px;
+    height: 500px;
+}
+
+#embedmap-canvas {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+#embedmap-canvas iframe {
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+.card-img-top {
+    width: 100%;
+}
