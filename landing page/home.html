@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="nav">
+    <a href="#"> <img src="./images/logo.png" alt="logo" class="logo"></a>
+    <ul>
+    <li><a  href="#">Home</a></li>
+     <li><a href="#menu">Menu</a></li>
+     <li><a  href="#new">What's new</a></li>
+    <li><a  href="#contact">Contact</a></li>
+    <li></ul>
+  </div>
+    <div class="con">
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just a coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="https://www.starbucks.in/dashboard">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/img1.png" alt="image1" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/thumb1.png" alt="thumb1" onclick="imgSlider('images/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="images/thumb2.png" alt="thumb2" onclick="imgSlider('images/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="images/thumb3.png" alt="thumb3" onclick="imgSlider('images/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/Starbucks/"><img src="images/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://twitter.com/starbucksindia?lang=en"><img src="images/twitter.png" alt="twitter"></a></li>
+            <li><a href="https://www.instagram.com/starbucks/?hl=en"><img src="images/instagram.png" alt="instagram"></a></li>
+        </ul>
+    </div>
+    <section id="menu" class="py-5">
+            <h1>Menu</h1>
+        <table>
+            <tr><th>HOT</th><th>COLD</th></tr>
+        
+            <tr><td><i class="fa-solid fa-coffee-bean"></i>Pumpkin Spice Latte</td><td><i class="fa-solid fa-coffee-bean"></i>Pumpkin Cream Cold Brew</td></tr>
+            <tr><td><i class="fa-solid fa-coffee-bean"></i>New Iced Apple Crisp Oatmilk Shake</td><td><i class="fa-solid fa-coffee-bean"></i>New Iced Cream Chai Tea Latte</td></tr>
+            <tr><td><i class="fa-solid fa-coffee-bean"></i>Pumpkin Cream Cheese Muffin</td><td><i class="fa-solid fa-coffee-bean"></i>New Baked Apple Croissant</td></tr>
+            <tr><td><i class="fa-solid fa-coffee-bean"></i>Featured Blonde Roast</td><td><i class="fa-solid fa-coffee-bean"></i>cappucino</td></tr>
+            <tr><td><i class="fa-solid fa-coffee-bean"></i>Caffe Misto</td><td><i class="fa-solid fa-coffee-bean"></i>Starbucks Baya Energy Mango Guava</td></tr>
+        </table>
+        </section>
+    <section id="new">
+        <h1 class="text-center">What's New</h1>
+        <img src="images/New.jpeg" alt="what's new">
+    </section>
+    <section id="contact">
+        <h1 class="text-center">Contact</h1>
+        <h3>Customer Service</h3>
+        <p>If you have general questions or concerns about Starbucks, <br>please contact our Customer Contact Center customerservice.starbucks.com.</p>
+    </section>
+    <script src="home.js"></script>
+</body>
+</html>
